@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --main-color: #16b978;
+    --second-color: #092b54;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    transition: 0.2s;
+    background-color: #f4f4f4; /* A light neutral background to make the content stand out */
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin-right: 5px;
+    width: 70px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: 1000;
+}
+.navbar a:hover{
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+#menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(img/stylish-clothing-displayed-boutique.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 1rem;
+
+}
+.home .content{
+    flex: 1 1 40%;
+    color: #fff;
+}
+.home .content h3{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.home .content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.home .content a{
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+.home .content a:hover{
+    background: #fff;
+    color: var(--main-color);
+}
+.home .image{
+    flex: 1 1 50%;
+}
+.footer {
+    background: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer p {
+    margin: 0 10px;
+}
+.footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+.footer a:hover {
+    color: #092b54;
+    text-decoration: none;
+}
+.footer-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px; /* Adds space between icons */
+}
+
+.footer-content .socials li a {
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+ /* About Us*/
+ .About-us {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(71, 20, 20, 0.2);
+    max-width: 800px;
+    margin: 50px auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.About-us h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.About-us p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.About-us a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.About-us a:hover {
+    color: var(--second-color);
+    text-shadow: 0 0 5px rgba(0, 119, 181, 0.3);
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.payment-methods img, .awards img {
+    height: 40px;
+    margin: 10px;
+    opacity: 0.7;
+}
+.payment-methods img{
+    width: 60px;
+    height: auto;
+}
+
+.country-selector {
+    text-align: right;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.offers {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #8B6C36;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.offers img {
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .country-selector {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payment-methods, .awards {
+        text-align: center;
+    }
+}
+
